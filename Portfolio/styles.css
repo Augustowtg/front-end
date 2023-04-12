@@ -1,0 +1,24 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837e9f;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+figcaption {
+    display: none;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+}
+.profile-picture {
+    width: 128px;
+    height: 128px;
+    background: center cover;
+}
+
+ul li {
+    list-style: none;
+}

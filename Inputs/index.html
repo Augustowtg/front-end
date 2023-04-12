@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+
+<body>
+    <form action="" method="GET">
+
+        <!-- 
+            - auto complete
+            - autofocus
+            - disabled
+            - readonly (quase todos)
+            - value
+            - form (quase todos)
+            - name 
+            - required (quase todos)
+            - placeholder (quase todos)
+         -->
+
+
+        <!-- Email -->
+        <fieldset>
+            <datalist id="emailsList">
+                <option>@gmail.com</option>
+            </datalist>
+            <input required type="email" autocomplete="email" placeholder="E-mail" minlength="5" maxlength="255"
+            list="emailsList"
+            pattern="[.+@]">
+        </fieldset>
+
+        <!-- Password -->
+        <fieldset>
+            <input required minlength="4" maxlength="18" type="password" placeholder="Senha"
+                autocomplete="new-password" pattern="[0-9a-fA-F]{4,18}"
+                title="Coloque HEX no mínimo 4 e no máximo 8 caracters">
+        </fieldset>
+    </form>
+</body>
+
+</html>
